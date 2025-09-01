@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Home • Sanjana H G — AI & Data Science</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* New futuristic background */
+    .hero {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      background: radial-gradient(circle at center, #0d1b2a, #000814);
+      position: relative;
+      overflow: hidden;
+    }
+    .hero::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background-image: url('https://i.ibb.co/kqxzMhQ/circuit-pattern.png'); /* AI circuit pattern */
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      opacity: 0.07;
+    }
+    .hero-inner {
+      position: relative;
+      z-index: 1;
+    }
+    .badge {
+      display: inline-block;
+      padding: 6px 18px;
+      border-radius: 20px;
+      font-weight: 600;
+      color: #0d1b2a;
+      background: #06b6d4;
+      box-shadow: 0 0 20px rgba(6,182,212,0.6);
+      margin-bottom: 18px;
+    }
+    h1 {
+      font-size: clamp(2.5rem, 6vw, 4rem);
+      font-weight: 800;
+      color: #facc15; /* Solid gold color for name */
+      text-shadow: 0 0 15px rgba(250,204,21,0.6);
+    }
+    .sub {
+      margin-top: 10px;
+      font-size: 1.2rem;
+      color: #a3a3a3;
+    }
+    .btn {
+      display: inline-block;
+      margin-top: 24px;
+      padding: 12px 22px;
+      border-radius: 14px;
+      font-weight: 700;
+      text-decoration: none;
+      background: linear-gradient(90deg, #06b6d4, #3b82f6);
+      color: #fff;
+      box-shadow: 0 0 20px rgba(6,182,212,0.6);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .btn:hover {
+      transform: translateY(-4px) scale(1.05);
+      box-shadow: 0 0 25px rgba(59,130,246,0.9);
+    }
+    .btn.ghost {
+      background: transparent;
+      border: 2px solid #06b6d4;
+      color: #06b6d4;
+    }
+    .btn.ghost:hover {
+      background: #06b6d4;
+      color: #0d1b2a;
+    }
+    .section {
+      padding: 70px 20px;
+      background: #0a0f1e;
+    }
+    .grid {
+      display: grid;
+      gap: 20px;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      margin-top: 30px;
+    }
+    .card {
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 18px;
+      padding: 22px;
+      box-shadow: 0 0 15px rgba(6,182,212,0.3);
+      transition: transform 0.4s ease, box-shadow 0.4s ease;
+      cursor: pointer;
+    }
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 0 25px rgba(250,204,21,0.6);
+    }
+    .card h3 {
+      font-size: 1.3rem;
+      color: #06b6d4;
+      margin-bottom: 10px;
+    }
+    .card p {
+      font-size: 0.95rem;
+      color: #ccc;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="education.html">Education</a>
+      <a href="skills.html">Skills</a>
+      <a href="projects.html">Projects</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-inner">
+      <div class="badge">Artificial Intelligence · Data Science</div>
+      <h1>Sanjana H G</h1>
+      <p class="sub" data-typer></p>
+      <div>
+        <a class="btn" href="projects.html">🚀 Explore Projects</a>
+        <a class="btn ghost" href="contact.html" style="margin-left:12px">🤝 Let’s Connect</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>Featured Work</h2>
+    <p class="lead">Projects and explorations at the intersection of <strong>AI</strong>, <strong>Data Science</strong>, and <strong>Frontend</strong>.</p>
+    <div class="grid">
+      <div class="card">
+        <h3>🤖 Machine Learning & AI</h3>
+        <p class="meta">Python · NLP · Neural Nets</p>
+        <p>Smart models, NLP experiments, and translation systems making AI accessible.</p>
+      </div>
+      <div class="card">
+        <h3>📊 Data Visualizations</h3>
+        <p class="meta">Power BI · Tableau · Dashboards</p>
+        <p>Insight-driven dashboards turning raw data into meaningful narratives.</p>
+      </div>
+      <div class="card">
+        <h3>💻 Frontend Development</h3>
+        <p class="meta">HTML · CSS · Interactive UIs</p>
+        <p>Clean, responsive, and AI-integrated interfaces for clarity and usability.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">© 2025 Sanjana H G — AI & Data Science Portfolio</footer>
+  <script src="script.js"></script>
+</body>
+</html>
